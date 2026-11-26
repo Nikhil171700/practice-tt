@@ -1,0 +1,127 @@
+
+.technical-analysis-container {
+  padding: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #1f2937;
+}
+
+.technical-analysis-container h2 {
+  font-size: 23px;
+  margin: 25px 0 15px;
+  color: #111827;
+}
+
+.technical-analysis-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.technical-company-name {
+  font-size: 18px;
+  color: #4b5563;
+  margin: 10px 0;
+}
+
+.technical-period {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.technical-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.technical-result-card {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.technical-result-card h3 {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.technical-result-card p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #111827;
+  overflow-wrap: anywhere;
+}
+
+.technical-chart-card {
+  background: #ffffff;
+  padding: 22px;
+  margin: 25px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.technical-chart-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.technical-chart {
+  width: 100%;
+  height: 400px;
+}
+
+.technical-chart.small {
+  height: 300px;
+}
+
+.technical-loading {
+  padding: 30px;
+  text-align: center;
+  color: #2563eb;
+}
+
+.technical-error {
+  padding: 15px;
+  color: #dc2626;
+  background: #fef2f2;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.technical-back-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 7px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.technical-back-button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+  .technical-analysis-container {
+    padding: 12px;
+  }
+
+  .technical-chart-card {
+    padding: 12px;
+  }
+
+  .technical-chart {
+    height: 320px;
+  }
+
+  .technical-chart.small {
+    height: 270px;
+  }
+}

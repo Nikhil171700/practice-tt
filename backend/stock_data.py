@@ -1,14 +1,9 @@
-
-
 import os
 import requests
 import pandas as pd
 from datetime import datetime, timezone
 
-
-
 ALPHA_VANTAGE_URL = "https://www.alphavantage.co/query"
-
 
 def get_historical_stock_data(ticker: str, period: str):
 
@@ -46,6 +41,7 @@ def get_historical_stock_data(ticker: str, period: str):
     time_series = result.get("Time Series (Daily)")
 
     if not time_series:
+        print("ALPHA VANTAGE RESPONSE:", result)
         return None
 
     # Convert API response into DataFrame
@@ -144,7 +140,7 @@ def get_historical_stock_data(ticker: str, period: str):
         "RSI_14"
     ] = 50
 
-    # Calculate MACD
+
     ema_12 = data["Close"].ewm(
         span=12,
         adjust=False

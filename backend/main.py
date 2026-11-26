@@ -1,4 +1,5 @@
-
+from routers.risk import router as risk_router
+from routers.technical import router as technical_router
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, EmailStr, Field, field_validator
@@ -73,7 +74,8 @@ app.add_middleware(
 
 app.include_router(company_router)
 
-
+app.include_router(risk_router)
+app.include_router(technical_router)
 # HOME API
 
 @app.get("/")
